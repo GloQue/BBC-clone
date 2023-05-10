@@ -1,0 +1,389 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+}
+.menu{
+    display: block;
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    margin-top: 300px;
+}
+
+header{
+    background-color: black;
+    padding: 0 20px;
+    
+}
+
+.logo{
+    color: red;
+    font-size: 2.5rem;
+}
+
+h1{
+    color: white;
+    font-size: 2.5rem;
+    
+}
+
+.header-icons li i{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.header-icons li i:hover{
+    color: orangered;
+}
+
+.nav-bar{
+    padding: 40px 0;
+}
+
+.nav-bar-ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-bar-ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-bar-ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    display: block;
+    background-color: orangered;
+    margin: auto;
+    transition: 0.5s ease;
+}
+
+.nav-bar-ul li:hover::after{
+    width: 100%;
+}
+
+.news-today-sub{
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.header-icons{
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    list-style: none;
+    
+}
+
+.news-today{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+   
+}
+
+main{
+    display: flex;
+    padding: 30px 5%;
+}
+
+img{
+    width: 100%;
+    filter: brightness(0.6);
+    
+}
+
+.featured{
+    flex: 2;
+}
+
+.latest, .our-picks{
+    flex: 1;
+}
+
+
+
+main h2{
+    font-size: 2rem;
+}
+
+main p{
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+.relative{
+    position: relative;
+}
+
+.relative p{
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+
+}
+
+.featured p{
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
+}
+.featured h2{
+    background-color: black;
+    color: white;
+    padding: 30px 10px;
+    font-weight: 800;
+}
+
+.latest h2{
+    background-color: rgb(184,0,0);
+    color: white;
+    padding: 30px 10px;
+    font-weight: 800;
+}
+
+.our-picks h2{
+    background-color: rgb(0,62,148);
+    color: white;
+    padding: 30px 10px;
+    font-weight: 800;
+}
+
+.second-section{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 50px 5%;
+    justify-content: space-between;
+}
+
+.same-font h4{
+    font-size: 2.5rem;
+}
+
+.same-font p{
+    font-size: 2rem;
+    text-align: justify;
+}
+
+h3{
+    padding: 10px 10px;
+    font-size: 2rem;
+}
+
+.world h3{
+    background:rgb(184,0,0);
+}
+
+.sport h3{
+    background: mediumslateblue;
+}
+.world, .sport, .recent{
+    flex-basis: 30%;
+}
+
+aside{
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.recent-left{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.recent-left img{
+    width: 100px;
+    height: 100px;
+    flex-basis: 40%;
+}
+
+.recent-left p{
+    flex-basis: 40%;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: auto;
+}
+
+.final-section{
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-between;
+}
+
+h5{
+    font-size: 2.5rem;
+}
+
+.final-section p{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+.final-section i{
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.final-section img{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+.about, .subscribe{
+    flex-basis: 30%;
+}
+
+.insta{
+    flex-basis: 35%;
+}
+
+button{
+    border: 1px solid lightskyblue;
+    color: lightskyblue;
+    padding: 10px;
+    font-weight: bold;
+    background: white;
+    font-size: 1.2rem;
+    display: block;
+    margin: 30px auto;
+}
+
+button:hover{
+    background: lightskyblue;
+    color: white;
+}
+
+
+input{
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.final-section-icons{
+    margin-top: 10px;
+    
+}
+
+footer{
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    padding: 30px;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+/* *************************************************MEDIA QUERY**************************************************************************/
+
+@media screen and (max-width: 850px) {
+    .nav-bar-ul{
+        height: 100vh;
+        flex-direction: column;
+        margin-top: -1300px;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .menu{
+        margin: unset;
+    }
+
+    .menu-bar{
+        margin-top: 0;
+        border-bottom-right-radius: 30%;
+    }
+
+
+    .second-section{
+        flex-direction: column;
+    }
+
+    .bottom-same{
+        padding: 20px 0;
+    }
+
+    .recent-left img{
+        width: 30%;
+        height: 40%;
+    }
+
+    .insta{
+        margin: 0 5%;
+    }
+
+    .final-section{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1500px){
+    .second-section{
+        flex-direction: column;
+    }
+
+    .nav-bar-ul li a{
+        font-size: 1rem;
+    }
+
+    .bottom-same{
+        padding: 20px 0;
+    }
+
+    .final-section{
+        flex-direction: column;
+    
+    }
+
+    .our-picks h2{
+        padding: 10px 10px;
+        font-size: 1.5rem;
+    }
+
+    .featured h2{
+        padding: 10px 10px;
+        font-size: 1.5rem;
+    }
+
+    .latest h2{
+        padding: 10px 10px;
+        font-size: 1.5rem;
+    }
+
+    
+
+    .recent-left img{
+        width: 100%;
+        height: 200px;
+    }
+
+
+
+}
